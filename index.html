@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>信用卡回饋比較器</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>信用卡回饋比較</h1>
+        <p>輸入消費金額與商家，快速找出當下最划算的卡。</p>
+      </header>
+
+      <section class="panel form-panel">
+        <div class="field">
+          <label for="merchantSelect">常用商家</label>
+          <select id="merchantSelect"></select>
+        </div>
+        <div class="field">
+          <label for="merchantInput">或輸入商家名稱</label>
+          <input id="merchantInput" type="text" placeholder="例如：LINE Pay、Agoda、中華航空" />
+        </div>
+        <div class="field">
+          <label for="amountInput">消費金額（TWD）</label>
+          <input id="amountInput" type="number" min="0" step="1" value="5000" />
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>比較結果</h2>
+        <div id="resultMeta" class="meta"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>卡片</th>
+                <th>回饋試算</th>
+                <th>回饋規則</th>
+                <th>資料狀態</th>
+              </tr>
+            </thead>
+            <tbody id="resultBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>各卡優惠內容</h2>
+        <div id="benefitList" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>機場接送規則</h2>
+        <ul id="airportRules" class="rule-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>海外消費手續費</h2>
+        <ul id="fxFees" class="rule-list"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
