@@ -36,6 +36,10 @@ body {
   color: var(--muted);
 }
 
+.updated-at {
+  font-size: 13px;
+}
+
 .panel {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -84,6 +88,10 @@ select {
   overflow-x: auto;
 }
 
+.mobile-result-list {
+  display: none;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -123,6 +131,34 @@ th {
 .badge.warn {
   background: #fffbeb;
   color: var(--warn);
+}
+
+.result-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.result-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.result-amount {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.result-rule {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.rank-1-card {
+  border-color: #cbd5e1;
+  background: #f8fafc;
 }
 
 .card-grid {
@@ -172,4 +208,15 @@ th {
 .rule-list li {
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .table-wrap {
+    display: none;
+  }
+
+  .mobile-result-list {
+    display: grid;
+    gap: 10px;
+  }
 }

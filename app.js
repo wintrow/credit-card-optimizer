@@ -10,6 +10,26 @@ const state = {
   amount: 5000
 };
 
+function formatTaiwanDateTime(value) {
+  if (!value) return "未提供";
+  const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(String(value));
+  if (isDateOnly) {
+    const [year, month, day] = String(value).split("-");
+    return `${year}/${month}/${day}`;
+  }
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return String(value);
+  return new Intl.DateTimeFormat("zh-TW", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  }).format(parsed);
+}
+
 function isActive(expireDate) {
   if (!expireDate) return true;
   const today = new Date();
@@ -36,6 +56,7 @@ function toRewardTwd(amount, rule) {
 
 function renderTable() {
   const tbody = document.getElementById("resultBody");
+  const mobileWrap = document.getElementById("resultCards");
   const meta = document.getElementById("resultMeta");
   const merchant = state.merchant.trim() || "一般消費";
   const amount = Number(state.amount) || 0;
@@ -63,6 +84,27 @@ function renderTable() {
       `;
     })
     .join("");
+
+  mobileWrap.innerHTML = rows
+    .map((row, index) => {
+      const statusClass = row.card.sourceStatus === "official" ? "ok" : "warn";
+      const statusText = row.card.sourceStatus === "official" ? "官方頁已驗證" : "部分資料需複核";
+      return `
+        <article class="result-card ${index === 0 ? "rank-1-card" : ""}">
+          <h3>${index === 0 ? "🏆 " : ""}${row.card.name}</h3>
+          <p class="result-amount">${moneyFormatter.format(row.rewardTwd)}（估）</p>
+          <p class="result-rule">${row.rule.condition || "依一般回饋"}</p>
+          <p><span class="badge ${statusClass}">${statusText}</span></p>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function renderUpdatedAt() {
+  const target = document.getElementById("updatedAt");
+  const generatedAt = state.data?.generatedAt;
+  target.textContent = `資料更新：${formatTaiwanDateTime(generatedAt)}（台灣時間）`;
 }
 
 function renderBenefits() {
@@ -149,6 +191,7 @@ function bindInputs() {
 async function init() {
   const response = await fetch("./data/cards.json");
   state.data = await response.json();
+  renderUpdatedAt();
   bindInputs();
   renderTable();
   renderBenefits();
