@@ -7,7 +7,7 @@ const moneyFormatter = new Intl.NumberFormat("zh-TW", {
 const state = {
   data: null,
   merchant: "",
-  amount: 5000
+  amount: 500
 };
 
 function formatTaiwanDateTime(value) {
@@ -37,21 +37,94 @@ function isActive(expireDate) {
   return end >= today;
 }
 
+function findMatchedKeywords(merchant, keywords) {
+  const normalizedMerchant = (merchant || "").toLowerCase();
+  return (keywords || []).filter((keyword) =>
+    normalizedMerchant.includes(String(keyword).toLowerCase())
+  );
+}
+
 function getEffectiveRule(card, merchant) {
   const normalizedMerchant = (merchant || "").toLowerCase();
-  const activeRules = (card.merchantRewards || []).filter((rule) => isActive(rule.expiresAt));
-  for (const rule of activeRules) {
-    const matched = (rule.keywords || []).some((keyword) =>
+  const activePlanHints = (card.planHintRules || []).filter((rule) => isActive(rule.expiresAt));
+  for (const rule of activePlanHints) {
+    const matchedKeywords = findMatchedKeywords(merchant, rule.keywords);
+    if (matchedKeywords.length > 0) {
+      return {
+        rate: rule.rate ?? 0,
+        unit: rule.unit || "TWD",
+        valuePerUnitTwd: rule.valuePerUnitTwd ?? 1,
+        condition: rule.condition || "請依卡片方案使用",
+        matchedKeywords
+      };
+    }
+  }
+  const activeExceptionRules = (card.noRewardExceptionRules || []).filter((rule) =>
+    isActive(rule.expiresAt)
+  );
+  for (const rule of activeExceptionRules) {
+    const requiredKeywords = rule.requiredKeywords || [];
+    const matchedAll = requiredKeywords.every((keyword) =>
       normalizedMerchant.includes(String(keyword).toLowerCase())
     );
-    if (matched) return rule;
+    if (matchedAll) {
+      return {
+        rate: rule.rate ?? 0,
+        unit: rule.unit || "TWD",
+        valuePerUnitTwd: rule.valuePerUnitTwd ?? 1,
+        condition: rule.condition || "符合銀行公告例外回饋",
+        matchedKeywords: requiredKeywords
+      };
+    }
   }
-  return card.baseReward;
+  const matchedNoRewardKeywords = findMatchedKeywords(merchant, card.noRewardKeywords);
+  if (matchedNoRewardKeywords.length > 0) {
+    return {
+      rate: 0,
+      unit: "TWD",
+      valuePerUnitTwd: 1,
+      condition: "此通路屬銀行公告不回饋項目",
+      matchedKeywords: matchedNoRewardKeywords
+    };
+  }
+  const activeRules = (card.merchantRewards || []).filter((rule) => isActive(rule.expiresAt));
+  for (const rule of activeRules) {
+    const matchedKeywords = findMatchedKeywords(merchant, rule.keywords);
+    if (matchedKeywords.length > 0) {
+      return {
+        ...rule,
+        matchedKeywords
+      };
+    }
+  }
+  if (card.id === "taishin-richart-visa") {
+    return {
+      ...card.baseReward,
+      rate: 0.02,
+      condition: "假日刷最高2%（未命中其他關鍵字時預設）",
+      matchedKeywords: ["假日刷(預設)"]
+    };
+  }
+  return {
+    ...card.baseReward,
+    matchedKeywords: []
+  };
 }
 
 function toRewardTwd(amount, rule) {
   const valuePerUnit = rule.valuePerUnitTwd ?? 1;
   return amount * rule.rate * valuePerUnit;
+}
+
+function getDisplayCondition(card, rule) {
+  const fallback = "依一般回饋";
+  if (!rule) return fallback;
+
+  if (card?.id === "esun-unicard-visa" && String(rule.condition || "").includes("任意選")) {
+    return "任意選3.5%；UP選4.5%";
+  }
+
+  return rule.condition || fallback;
 }
 
 function renderTable() {
@@ -78,7 +151,8 @@ function renderTable() {
         <tr class="${index === 0 ? "rank-1" : ""}">
           <td>${row.card.name}</td>
           <td>${moneyFormatter.format(row.rewardTwd)}（估）</td>
-          <td>${row.rule.condition || "依一般回饋"}</td>
+          <td>${getDisplayCondition(row.card, row.rule)}</td>
+          <td>${(row.rule.matchedKeywords || []).join("、") || "-"}</td>
           <td><span class="badge ${statusClass}">${statusText}</span></td>
         </tr>
       `;
@@ -93,7 +167,8 @@ function renderTable() {
         <article class="result-card ${index === 0 ? "rank-1-card" : ""}">
           <h3>${index === 0 ? "🏆 " : ""}${row.card.name}</h3>
           <p class="result-amount">${moneyFormatter.format(row.rewardTwd)}（估）</p>
-          <p class="result-rule">${row.rule.condition || "依一般回饋"}</p>
+          <p class="result-rule">${getDisplayCondition(row.card, row.rule)}</p>
+          <p class="result-rule">符合關鍵字：${(row.rule.matchedKeywords || []).join("、") || "-"}</p>
           <p><span class="badge ${statusClass}">${statusText}</span></p>
         </article>
       `;
@@ -124,10 +199,18 @@ function renderBenefits() {
             `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
         )
         .join("<br>");
+      const annualFee = card.annualFee || {
+        fee: "依發卡行最新公告",
+        waiver: "依發卡行最新公告"
+      };
       return `
         <article class="card">
           <h3>${card.name}</h3>
           <ul>${list || "<li>目前無可用優惠資料</li>"}</ul>
+          <div class="source-links">
+            <strong>年費：</strong>${annualFee.fee}<br>
+            <strong>免年費方式：</strong>${annualFee.waiver}
+          </div>
           <div class="source-links">
             <strong>來源網址：</strong><br>
             ${sourceLinks || "未提供"}
