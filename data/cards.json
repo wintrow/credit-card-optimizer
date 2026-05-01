@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28",
+  "generatedAt": "2026-05-01",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -85,7 +85,11 @@
       ],
       "noRewardExceptionRules": [
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "7-11"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "7-11"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -93,7 +97,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "7-eleven"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "7-eleven"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -101,7 +109,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "全家"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "全家"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -109,7 +121,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "7-11"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "7-11"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -117,7 +133,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "7-eleven"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "7-eleven"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -125,7 +145,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "全家"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "全家"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -135,7 +159,13 @@
       ],
       "planHintRules": [
         {
-          "keywords": ["假日", "週末", "周末", "國定假日", "連假"],
+          "keywords": [
+            "假日",
+            "週末",
+            "周末",
+            "國定假日",
+            "連假"
+          ],
           "rate": 0.02,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -143,7 +173,11 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "keywords": ["7-11", "7-eleven", "全家"],
+          "keywords": [
+            "7-11",
+            "7-eleven",
+            "全家"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -159,7 +193,10 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["保險", "保費"],
+          "keywords": [
+            "保險",
+            "保費"
+          ],
           "rate": 0.013,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -186,7 +223,9 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "keywords": ["LINE Pay"],
+          "keywords": [
+            "LINE Pay"
+          ],
           "rate": 0.023,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -387,7 +426,8 @@
       "foreignFee": {
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:14.009Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -484,7 +524,10 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["保險", "保費"],
+          "keywords": [
+            "保險",
+            "保費"
+          ],
           "rate": 0.01,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -604,7 +647,9 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "keywords": ["海外一般消費"],
+          "keywords": [
+            "海外一般消費"
+          ],
           "rate": 0.025,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -637,7 +682,8 @@
       "foreignFee": {
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:15.320Z"
     },
     {
       "id": "esun-doctor-infinite-visa",
@@ -722,7 +768,10 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["保險", "保費"],
+          "keywords": [
+            "保險",
+            "保費"
+          ],
           "rate": 0.01,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -730,7 +779,9 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "keywords": ["海外一般消費"],
+          "keywords": [
+            "海外一般消費"
+          ],
           "rate": 0.02,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -738,7 +789,10 @@
           "expiresAt": "2026-06-30"
         },
         {
-          "keywords": ["中華航空", "高鐵"],
+          "keywords": [
+            "中華航空",
+            "高鐵"
+          ],
           "rate": 0.03,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -767,7 +821,8 @@
       "foreignFee": {
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:15.562Z"
     },
     {
       "id": "ctbc-ana-jcb-precious",
@@ -864,7 +919,10 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["保險", "保費"],
+          "keywords": [
+            "保險",
+            "保費"
+          ],
           "rate": 0.02,
           "unit": "mile",
           "valuePerUnitTwd": 0.4,
@@ -872,7 +930,9 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "keywords": ["海外一般消費"],
+          "keywords": [
+            "海外一般消費"
+          ],
           "rate": 0.04,
           "unit": "mile",
           "valuePerUnitTwd": 0.4,
@@ -880,7 +940,13 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "keywords": ["Agoda", "Booking.com", "Trip.com", "Hotels.com", "Expedia"],
+          "keywords": [
+            "Agoda",
+            "Booking.com",
+            "Trip.com",
+            "Hotels.com",
+            "Expedia"
+          ],
           "rate": 0.04,
           "unit": "mile",
           "valuePerUnitTwd": 0.4,
@@ -906,7 +972,8 @@
       "foreignFee": {
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:16.585Z"
     },
     {
       "id": "esun-traveler-visa",
@@ -1003,7 +1070,10 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["保險", "保費"],
+          "keywords": [
+            "保險",
+            "保費"
+          ],
           "rate": 0.012,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -1011,7 +1081,9 @@
           "expiresAt": "2028-12-31"
         },
         {
-          "keywords": ["台鐵/捷運"],
+          "keywords": [
+            "台鐵/捷運"
+          ],
           "rate": 0.015,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -1019,7 +1091,10 @@
           "expiresAt": "2028-12-31"
         },
         {
-          "keywords": ["旅行社", "KKday"],
+          "keywords": [
+            "旅行社",
+            "KKday"
+          ],
           "rate": 0.03,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -1044,7 +1119,8 @@
       "foreignFee": {
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:16.980Z"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -1054,7 +1130,7 @@
       "sourceUrls": [
         "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
       ],
-      "sourceStatus": "partial",
+      "sourceStatus": "official",
       "baseReward": {
         "rate": 0.01,
         "unit": "point",
@@ -1063,14 +1139,22 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["餐飲"],
+          "keywords": [
+            "餐飲"
+          ],
           "rate": 0.03,
           "unit": "point",
           "valuePerUnitTwd": 0.4,
           "condition": "Dining 3x points"
         },
         {
-          "keywords": ["Agoda", "Booking.com", "Trip.com", "Hotels.com/Expedia", "旅遊"],
+          "keywords": [
+            "Agoda",
+            "Booking.com",
+            "Trip.com",
+            "Hotels.com/Expedia",
+            "旅遊"
+          ],
           "rate": 0.02,
           "unit": "point",
           "valuePerUnitTwd": 0.4,
@@ -1092,7 +1176,8 @@
       "foreignFee": {
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:18.058Z"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -1102,7 +1187,7 @@
       "sourceUrls": [
         "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
       ],
-      "sourceStatus": "partial",
+      "sourceStatus": "official",
       "baseReward": {
         "rate": 0.015,
         "unit": "TWD",
@@ -1111,14 +1196,19 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["餐飲"],
+          "keywords": [
+            "餐飲"
+          ],
           "rate": 0.03,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "Dining 3%"
         },
         {
-          "keywords": ["旅行社", "旅遊"],
+          "keywords": [
+            "旅行社",
+            "旅遊"
+          ],
           "rate": 0.05,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -1140,7 +1230,8 @@
       "foreignFee": {
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:18.229Z"
     },
     {
       "id": "boa-travel-rewards",
@@ -1150,7 +1241,7 @@
       "sourceUrls": [
         "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/"
       ],
-      "sourceStatus": "partial",
+      "sourceStatus": "official",
       "baseReward": {
         "rate": 0.015,
         "unit": "point",
@@ -1159,7 +1250,9 @@
       },
       "merchantRewards": [
         {
-          "keywords": ["旅遊"],
+          "keywords": [
+            "旅遊"
+          ],
           "rate": 0.03,
           "unit": "point",
           "valuePerUnitTwd": 1,
@@ -1181,7 +1274,8 @@
       "foreignFee": {
         "rate": 0,
         "note": "No foreign transaction fee。"
-      }
+      },
+      "lastCrawledAt": "2026-05-01T04:16:18.368Z"
     }
   ]
 }
