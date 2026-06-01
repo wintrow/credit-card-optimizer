@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01",
+  "generatedAt": "2026-06-01",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -427,7 +427,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:14.009Z"
+      "lastCrawledAt": "2026-06-01T05:15:15.409Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -683,7 +683,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:15.320Z"
+      "lastCrawledAt": "2026-06-01T05:15:17.200Z"
     },
     {
       "id": "esun-doctor-infinite-visa",
@@ -822,7 +822,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:15.562Z"
+      "lastCrawledAt": "2026-06-01T05:15:17.498Z"
     },
     {
       "id": "ctbc-ana-jcb-precious",
@@ -973,7 +973,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:16.585Z"
+      "lastCrawledAt": "2026-06-01T05:15:18.708Z"
     },
     {
       "id": "esun-traveler-visa",
@@ -1120,7 +1120,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:16.980Z"
+      "lastCrawledAt": "2026-06-01T05:15:19.019Z"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -1177,7 +1177,7 @@
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:18.058Z"
+      "lastCrawledAt": "2026-06-01T05:15:19.984Z"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -1231,7 +1231,7 @@
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:18.229Z"
+      "lastCrawledAt": "2026-06-01T05:15:20.137Z"
     },
     {
       "id": "boa-travel-rewards",
@@ -1275,7 +1275,7 @@
         "rate": 0,
         "note": "No foreign transaction fee。"
       },
-      "lastCrawledAt": "2026-05-01T04:16:18.368Z"
+      "lastCrawledAt": "2026-06-01T05:15:20.305Z"
     }
   ]
 }
