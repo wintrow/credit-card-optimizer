@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01",
+  "generatedAt": "2026-07-01",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -191,231 +191,8 @@
         "valuePerUnitTwd": 1,
         "condition": "一般消費 0.3%"
       },
-      "merchantRewards": [
-        {
-          "keywords": [
-            "保險",
-            "保費"
-          ],
-          "rate": 0.013,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "保費一般回饋最高1.3%；若符合假日刷條件可享更高回饋",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "台新Pay",
-            "台新Pay+",
-            "TWQR",
-            "台灣Pay",
-            "神腦",
-            "燦坤",
-            "全國電子",
-            "麥當勞",
-            "美廉社",
-            "大樹藥局"
-          ],
-          "rate": 0.038,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Pay著刷最高3.8%（台新Pay(TWQR、台灣Pay)）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "LINE Pay"
-          ],
-          "rate": 0.023,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "LINE Pay 綁定最高2.3%",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "家樂福",
-            "大買家",
-            "唐吉訶德",
-            "LOPIA",
-            "台鐵",
-            "高鐵",
-            "台灣大車隊",
-            "LINEGO",
-            "Yoxi",
-            "Uber",
-            "台灣Bolt",
-            "中油直營",
-            "全國加油",
-            "全國特急電",
-            "EVOASIS",
-            "EVALUE",
-            "USPACE",
-            "Autopass",
-            "寶雅",
-            "康是美",
-            "屈臣氏",
-            "杏一",
-            "大樹藥局",
-            "丁丁藥局",
-            "佑全",
-            "健康人生藥局"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "天天刷最高3.3%",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "新光三越",
-            "遠東百貨",
-            "遠東SOGO",
-            "漢神巨蛋",
-            "漢神百貨",
-            "微風",
-            "台北101",
-            "誠品生活",
-            "京站",
-            "LaLaport",
-            "MITSUI OUTLET PARK",
-            "華泰名品城",
-            "SKM Park Outlets",
-            "IKEA",
-            "特力屋",
-            "HOLA",
-            "宜得利",
-            "UNIQLO",
-            "GU",
-            "ZARA",
-            "NET",
-            "lululemon"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "大筆刷最高3.3%",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "王品瘋Pay",
-            "Uber Eats",
-            "Foodpanda",
-            "拓元售票",
-            "KKTIX",
-            "年代售票",
-            "寬宏售票",
-            "OPENTIX",
-            "FunNow",
-            "錢櫃",
-            "好樂迪",
-            "ONCOR",
-            "sing!go",
-            "享溫馨",
-            "晶華",
-            "萬豪",
-            "君悅",
-            "寒沐",
-            "洲際"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "好饗刷最高3.3%",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "蝦皮",
-            "momo",
-            "酷澎",
-            "Coupang",
-            "PChome",
-            "pchome",
-            "淘寶",
-            "Amazon",
-            "東森",
-            "博客來",
-            "Richart Mart",
-            "PayEasy",
-            "iHerb",
-            "SHEIN",
-            "Farfetch",
-            "Olive Young",
-            "Hahow",
-            "PressPlay",
-            "Steam",
-            "PlayStation",
-            "Nintendo",
-            "Netflix",
-            "Disney+",
-            "ChatGPT",
-            "Notion",
-            "Canva",
-            "Perplexity",
-            "Claude"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "數趣刷最高3.3%",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "海外一般消費",
-            "中華航空",
-            "長榮航空",
-            "星宇航空",
-            "台灣虎航",
-            "國泰航空",
-            "華信航空",
-            "立榮航空",
-            "樂桃航空",
-            "阿聯酋航空",
-            "亞洲航空",
-            "酷航",
-            "捷星航空",
-            "新加坡航空",
-            "日本航空",
-            "越捷航空",
-            "Klook",
-            "KKday",
-            "Agoda",
-            "Booking.com",
-            "Trip.com",
-            "Airbnb",
-            "Hotels.com",
-            "Expedia",
-            "雄獅旅遊",
-            "易遊網",
-            "東南旅遊",
-            "可樂旅遊",
-            "長汎假期",
-            "五福旅遊",
-            "喜鴻假期",
-            "易飛旅遊",
-            "燦星旅遊",
-            "加利利旅行社",
-            "鳳凰國際旅行社",
-            "山富旅遊",
-            "行健旅遊"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "玩旅刷最高3.3%，需切換方案",
-          "expiresAt": "2026-06-30"
-        }
-      ],
-      "benefits": [
-        {
-          "text": "7大方案切換，指定通路最高3.8%",
-          "expiresAt": "2026-06-30"
-        }
-      ],
+      "merchantRewards": [],
+      "benefits": [],
       "airportTransferRules": [
         "活動期間一般消費達 NT$20,000，享機場接/送 1 趟；活動期每正卡最高 2 次。"
       ],
@@ -427,7 +204,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:15.409Z"
+      "lastCrawledAt": "2026-07-01T04:53:02.813Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -522,155 +299,8 @@
         "valuePerUnitTwd": 1,
         "condition": "一般消費最高1%（需帳單e化+玉山帳戶自扣）"
       },
-      "merchantRewards": [
-        {
-          "keywords": [
-            "保險",
-            "保費"
-          ],
-          "rate": 0.01,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "保險/保費交易依一般消費最高1%（仍須排除不回饋項目）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "玉山Wallet電子支付",
-            "LINE Pay",
-            "全支付",
-            "街口支付",
-            "悠遊付",
-            "全盈+PAY",
-            "iPASS MONEY",
-            "icash Pay",
-            "台灣中油",
-            "55688",
-            "台灣大車隊",
-            "機場接送",
-            "台鐵",
-            "高鐵",
-            "Uber",
-            "Yoxi",
-            "新光三越",
-            "遠東SOGO",
-            "遠東Garden City",
-            "遠東百貨",
-            "漢神百貨",
-            "微風百貨",
-            "台北101",
-            "華泰名品城",
-            "三井OUTLET",
-            "京站",
-            "美麗華",
-            "誠品生活",
-            "誠品書店",
-            "誠品線上",
-            "秀泰生活",
-            "LaLaport",
-            "統領廣場",
-            "統一時代百貨",
-            "DREAM PLAZA",
-            "昇恆昌",
-            "采盟",
-            "Uber Eats",
-            "foodpanda",
-            "EZTABLE",
-            "王品瘋Pay",
-            "饗賓餐飲",
-            "瓦城料理",
-            "乾杯燒肉",
-            "漢來美食",
-            "鼎王餐飲",
-            "爭鮮餐飲",
-            "中華航空",
-            "長榮航空",
-            "日本航空",
-            "台灣虎航",
-            "樂桃航空",
-            "酷航",
-            "Trip.com",
-            "Booking.com",
-            "Hotels.com",
-            "AsiaYo",
-            "Expedia",
-            "KKday",
-            "Klook",
-            "雄獅旅遊",
-            "可樂旅遊",
-            "東南旅遊",
-            "Agoda",
-            "Apple直營店",
-            "小米台灣",
-            "全國電子",
-            "燦坤",
-            "迪卡儂",
-            "家樂福",
-            "屈臣氏",
-            "康是美",
-            "特力屋",
-            "HOLA",
-            "hoi好好生活",
-            "UNIQLO",
-            "NET",
-            "大樹藥局",
-            "丁丁藥妝",
-            "momo購物網",
-            "蝦皮購物",
-            "淘寶網",
-            "Coupang酷澎",
-            "日本",
-            "韓國",
-            "泰國",
-            "越南",
-            "新加坡",
-            "馬來西亞",
-            "菲律賓",
-            "中國",
-            "香港",
-            "澳門",
-            "美國",
-            "加拿大",
-            "英國",
-            "法國",
-            "德國",
-            "義大利",
-            "澳洲",
-            "特斯拉",
-            "Gogoro",
-            "YouBike 2.0"
-          ],
-          "rate": 0.035,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "百大指定消費 任意選最高3.5%（8家指定消費；一般1%+加碼2.5%）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "海外一般消費"
-          ],
-          "rate": 0.025,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "指定國家海外實體登錄加碼，依門檻 0.5%~1.5%（另加原回饋）",
-          "expiresAt": "2026-06-30"
-        }
-      ],
-      "benefits": [
-        {
-          "text": "任意選方案：百大指定消費任選8家，最高3.5%（一般1%+加碼2.5%）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "text": "UP選方案：以玉山Wallet切換方案並完成指定任務後，可享對應加碼回饋（依玉山Unicard官網公告為準）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "text": "一般消費最高1%，需同時啟用 e 化帳單與玉山帳戶自扣",
-          "expiresAt": "2026-06-30"
-        }
-      ],
+      "merchantRewards": [],
+      "benefits": [],
       "airportTransferRules": [
         "玉山 VISA 御璽卡：刷卡購買全額國際線機票或國外團費80%以上，可用指定區域機場接/送優惠價 NT$675 起（非免費）。",
         "指定區域：臺北/新北/桃園往返桃機、臺中往返清泉崗、高雄往返小港。"
@@ -683,7 +313,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:17.200Z"
+      "lastCrawledAt": "2026-07-01T04:53:04.652Z"
     },
     {
       "id": "esun-doctor-infinite-visa",
@@ -777,37 +407,12 @@
           "valuePerUnitTwd": 1,
           "condition": "保險/保費交易依一般消費1%現金回饋（排除不回饋項目）",
           "expiresAt": "2026-12-31"
-        },
-        {
-          "keywords": [
-            "海外一般消費"
-          ],
-          "rate": 0.02,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "國外實體消費活動登錄後最高2%（含基本1%）",
-          "expiresAt": "2026-06-30"
-        },
-        {
-          "keywords": [
-            "中華航空",
-            "高鐵"
-          ],
-          "rate": 0.03,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "指定航空/高鐵最高3%（含基本回饋，需季登錄）",
-          "expiresAt": "2026-06-30"
         }
       ],
       "benefits": [
         {
           "text": "基本回饋1%現金回饋無上限",
           "expiresAt": "2026-12-31"
-        },
-        {
-          "text": "國外實體消費活動檔期最高2%",
-          "expiresAt": "2026-06-30"
         }
       ],
       "airportTransferRules": [
@@ -822,7 +427,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:17.498Z"
+      "lastCrawledAt": "2026-07-01T04:53:05.129Z"
     },
     {
       "id": "ctbc-ana-jcb-precious",
@@ -973,7 +578,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:18.708Z"
+      "lastCrawledAt": "2026-07-01T04:53:06.457Z"
     },
     {
       "id": "esun-traveler-visa",
@@ -1089,17 +694,6 @@
           "valuePerUnitTwd": 1,
           "condition": "減碳消費再加碼0.3%，需帳單e化",
           "expiresAt": "2028-12-31"
-        },
-        {
-          "keywords": [
-            "旅行社",
-            "KKday"
-          ],
-          "rate": 0.03,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "指定旅遊通路單筆滿額加碼3%（另有登錄上限）",
-          "expiresAt": "2026-06-30"
         }
       ],
       "benefits": [
@@ -1120,7 +714,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:19.019Z"
+      "lastCrawledAt": "2026-07-01T04:53:06.748Z"
     },
     {
       "id": "chase-sapphire-preferred",
@@ -1177,7 +771,7 @@
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:19.984Z"
+      "lastCrawledAt": "2026-07-01T04:53:07.219Z"
     },
     {
       "id": "chase-freedom-unlimited",
@@ -1231,7 +825,7 @@
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:20.137Z"
+      "lastCrawledAt": "2026-07-01T04:53:07.761Z"
     },
     {
       "id": "boa-travel-rewards",
@@ -1275,7 +869,7 @@
         "rate": 0,
         "note": "No foreign transaction fee。"
       },
-      "lastCrawledAt": "2026-06-01T05:15:20.305Z"
+      "lastCrawledAt": "2026-07-01T04:53:07.905Z"
     }
   ]
 }
