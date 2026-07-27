@@ -40,10 +40,11 @@ npm run update:offers
 
 - Workflow 檔案：`.github/workflows/update-offers.yml`
 - 觸發方式：
-  - 每月 1 日 08:15（台灣時間；UTC 00:15）
+  - 每週一 08:15（台灣時間；UTC 00:15）
   - 手動觸發（`Actions` 頁面中的 `Run workflow`）
 - 若 `data/cards.json` 或 `data/snapshots` 有變更，會自動 commit + push
 - 更新完成後會透過 `workflow_run` 自動觸發 GitHub Pages 重新部署
+- 注意：爬蟲主要抓 snapshot 與移除過期項目；中旬新開跑方案（如 Chill刷）仍需人工補進規則後才會完整顯示
 
 ### 3) 自動部署網站
 

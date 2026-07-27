@@ -30,9 +30,13 @@ function formatTaiwanDateTime(value) {
   }).format(parsed);
 }
 
-function isActive(expireDate) {
-  if (!expireDate) return true;
+function isActive(expireDate, startDate) {
   const today = new Date();
+  if (startDate) {
+    const start = new Date(`${startDate}T00:00:00`);
+    if (today < start) return false;
+  }
+  if (!expireDate) return true;
   const end = new Date(`${expireDate}T23:59:59`);
   return end >= today;
 }
@@ -46,7 +50,9 @@ function findMatchedKeywords(merchant, keywords) {
 
 function getEffectiveRule(card, merchant) {
   const normalizedMerchant = (merchant || "").toLowerCase();
-  const activePlanHints = (card.planHintRules || []).filter((rule) => isActive(rule.expiresAt));
+  const activePlanHints = (card.planHintRules || []).filter((rule) =>
+    isActive(rule.expiresAt, rule.startsAt)
+  );
   for (const rule of activePlanHints) {
     const matchedKeywords = findMatchedKeywords(merchant, rule.keywords);
     if (matchedKeywords.length > 0) {
@@ -60,7 +66,7 @@ function getEffectiveRule(card, merchant) {
     }
   }
   const activeExceptionRules = (card.noRewardExceptionRules || []).filter((rule) =>
-    isActive(rule.expiresAt)
+    isActive(rule.expiresAt, rule.startsAt)
   );
   for (const rule of activeExceptionRules) {
     const requiredKeywords = rule.requiredKeywords || [];
@@ -87,7 +93,9 @@ function getEffectiveRule(card, merchant) {
       matchedKeywords: matchedNoRewardKeywords
     };
   }
-  const activeRules = (card.merchantRewards || []).filter((rule) => isActive(rule.expiresAt));
+  const activeRules = (card.merchantRewards || []).filter((rule) =>
+    isActive(rule.expiresAt, rule.startsAt)
+  );
   for (const rule of activeRules) {
     const matchedKeywords = findMatchedKeywords(merchant, rule.keywords);
     if (matchedKeywords.length > 0) {
@@ -186,10 +194,15 @@ function renderBenefits() {
   const wrap = document.getElementById("benefitList");
   wrap.innerHTML = state.data.cards
     .map((card) => {
-      const activeBenefits = (card.benefits || []).filter((benefit) => isActive(benefit.expiresAt));
+      const activeBenefits = (card.benefits || []).filter((benefit) =>
+        isActive(benefit.expiresAt, benefit.startsAt)
+      );
       const list = activeBenefits
         .map((benefit) => {
-          const tag = benefit.expiresAt ? `（至 ${benefit.expiresAt}）` : "";
+          const startTag = benefit.startsAt ? `${benefit.startsAt}起` : "";
+          const endTag = benefit.expiresAt ? `至 ${benefit.expiresAt}` : "";
+          const range = [startTag, endTag].filter(Boolean).join(" ");
+          const tag = range ? `（${range}）` : "";
           return `<li>${benefit.text}${tag}</li>`;
         })
         .join("");

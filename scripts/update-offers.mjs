@@ -7,9 +7,10 @@ const projectRoot = path.resolve(__dirname, "..");
 const dataPath = path.join(projectRoot, "data", "cards.json");
 const snapshotDir = path.join(projectRoot, "data", "snapshots");
 
-function isActive(expireDate) {
-  if (!expireDate) return true;
+function isActive(expireDate, startDate) {
   const now = new Date();
+  if (startDate && now < new Date(`${startDate}T00:00:00`)) return false;
+  if (!expireDate) return true;
   return new Date(`${expireDate}T23:59:59`) >= now;
 }
 
@@ -52,8 +53,18 @@ async function run() {
   await mkdir(snapshotDir, { recursive: true });
 
   for (const card of data.cards) {
-    card.benefits = (card.benefits || []).filter((benefit) => isActive(benefit.expiresAt));
-    card.merchantRewards = (card.merchantRewards || []).filter((rule) => isActive(rule.expiresAt));
+    card.benefits = (card.benefits || []).filter((benefit) =>
+      isActive(benefit.expiresAt, benefit.startsAt)
+    );
+    card.merchantRewards = (card.merchantRewards || []).filter((rule) =>
+      isActive(rule.expiresAt, rule.startsAt)
+    );
+    card.planHintRules = (card.planHintRules || []).filter((rule) =>
+      isActive(rule.expiresAt, rule.startsAt)
+    );
+    card.noRewardExceptionRules = (card.noRewardExceptionRules || []).filter((rule) =>
+      isActive(rule.expiresAt, rule.startsAt)
+    );
 
     const results = [];
     for (const sourceUrl of card.sourceUrls || []) {

@@ -1,15 +1,19 @@
 {
-  "generatedAt": "2026-07-01",
+  "generatedAt": "2026-07-27",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
     "玉山Wallet電子支付",
     "全支付",
     "台新Pay",
+    "Chill刷",
     "家樂福",
     "momo購物網",
     "保費",
     "Uber",
+    "50嵐",
+    "海底撈",
+    "Netflix",
     "中華航空",
     "長榮航空",
     "高鐵",
@@ -34,7 +38,8 @@
       "network": "VISA",
       "currency": "TWD",
       "sourceUrls": [
-        "https://mkp.taishinbank.com.tw/s/2025/RichartCard_2025/index.html"
+        "https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20251216135624463/index.html",
+        "https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/future/ab46dfa7-5d88-11f1-b50f-0050568c09e3"
       ],
       "sourceStatus": "official",
       "noRewardKeywords": [
@@ -85,104 +90,79 @@
       ],
       "noRewardExceptionRules": [
         {
-          "requiredKeywords": [
-            "台新pay",
-            "pay著刷",
-            "7-11"
-          ],
+          "requiredKeywords": ["台新pay", "pay著刷", "7-11"],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：7-11 以台新Pay綁定 Richart，並切換 Pay著刷，最高3.8%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": [
-            "台新pay",
-            "pay著刷",
-            "7-eleven"
-          ],
+          "requiredKeywords": ["台新pay", "pay著刷", "7-eleven"],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：7-ELEVEN 以台新Pay綁定 Richart，並切換 Pay著刷，最高3.8%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": [
-            "台新pay",
-            "pay著刷",
-            "全家"
-          ],
+          "requiredKeywords": ["台新pay", "pay著刷", "全家"],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：全家以台新Pay綁定 Richart，並切換 Pay著刷，最高3.8%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": [
-            "台新pay",
-            "天天刷",
-            "7-11"
-          ],
+          "requiredKeywords": ["台新pay", "天天刷", "7-11"],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：7-11 以台新Pay綁定 Richart，並切換 天天刷，最高3.3%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": [
-            "台新pay",
-            "天天刷",
-            "7-eleven"
-          ],
+          "requiredKeywords": ["台新pay", "天天刷", "7-eleven"],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：7-ELEVEN 以台新Pay綁定 Richart，並切換 天天刷，最高3.3%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": [
-            "台新pay",
-            "天天刷",
-            "全家"
-          ],
+          "requiredKeywords": ["台新pay", "天天刷", "全家"],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "台新公告例外：全家以台新Pay綁定 Richart，並切換 天天刷，最高3.3%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         }
       ],
       "planHintRules": [
         {
-          "keywords": [
-            "假日",
-            "週末",
-            "周末",
-            "國定假日",
-            "連假"
-          ],
+          "keywords": ["Chill刷", "chill刷", "Chill"],
+          "rate": 0.1,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高10%（瘋聚會）；沉浸娛樂/獨自升級最高5%；數位外掛最高3.3%",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": ["假日", "週末", "周末", "國定假日", "連假"],
           "rate": 0.02,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "假日刷最高2%（國內節假日；依台新公告條件）",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         },
         {
-          "keywords": [
-            "7-11",
-            "7-eleven",
-            "全家"
-          ],
+          "keywords": ["7-11", "7-eleven", "全家"],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
           "condition": "建議用台新Pay綁定 Richart：Pay著刷最高3.8%；天天刷最高3.3%",
-          "expiresAt": "2026-06-30"
+          "expiresAt": "2026-12-31"
         }
       ],
       "baseReward": {
@@ -191,8 +171,185 @@
         "valuePerUnitTwd": 1,
         "condition": "一般消費 0.3%"
       },
-      "merchantRewards": [],
-      "benefits": [],
+      "merchantRewards": [
+        {
+          "keywords": [
+            "詹記",
+            "萬客什鍋",
+            "海底撈",
+            "屋馬",
+            "茶六",
+            "新村站著吃",
+            "燒肉政宗",
+            "碳佐麻里",
+            "雞湯大叔",
+            "gonna",
+            "BRUN",
+            "CAFE ACME",
+            "Antipodean",
+            "貳樓",
+            "樂子",
+            "Fake Sober",
+            "Draft Land",
+            "臺虎精釀",
+            "啜飲室",
+            "ABV",
+            "Bar TCRC",
+            "Bar Home",
+            "Phowa",
+            "MOONROCK",
+            "50嵐",
+            "得正",
+            "八曜和茶",
+            "五桐號",
+            "龜記",
+            "茶之魔手",
+            "UG TEA",
+            "叮哥",
+            "CAFE!N",
+            "Arabica",
+            "COMPOSE COFFEE"
+          ],
+          "rate": 0.1,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高10%（瘋聚會；限獨立店/官網）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": ["饗饗", "NAGOMI"],
+          "rate": 0.05,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高5%（約會賞味）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": [
+            "WEVERSE",
+            "K-MONSTAR",
+            "微樂客",
+            "五大唱片",
+            "仙女樹",
+            "FANME",
+            "NOL",
+            "巴哈姆特",
+            "BOOK WALKER",
+            "Animate",
+            "樂天KOBO",
+            "Readmoo",
+            "Netflix",
+            "Disney+",
+            "愛爾達"
+          ],
+          "rate": 0.05,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高5%（沉浸娛樂）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": [
+            "好好生醫",
+            "POPCARE",
+            "營養師輕食",
+            "VITABOX",
+            "MYPROTEIN",
+            "UrMart",
+            "Anytime Fitness",
+            "健身工廠",
+            "World Gym",
+            "Hypercore",
+            "KX PILATES",
+            "虎鐵健身",
+            "17FIT",
+            "Adidas",
+            "New Balance",
+            "PUMA",
+            "Onitsuka Tiger",
+            "Nike",
+            "HOKA",
+            "Salomon",
+            "lululemon"
+          ],
+          "rate": 0.05,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高5%（獨自升級）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": [
+            "Apple直營店",
+            "Apple官網",
+            "Studio A",
+            "DJI",
+            "Insta360",
+            "GoPro",
+            "蝦皮",
+            "淘寶",
+            "酷澎",
+            "Coupang",
+            "Uber Eats"
+          ],
+          "rate": 0.033,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Chill刷最高3.3%（數位外掛；蝦皮/Uber Eats等）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "keywords": ["保費"],
+          "rate": 0.013,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "保費一般回饋最高1.3%；若符合假日刷條件可享更高回饋",
+          "expiresAt": "2026-12-31"
+        },
+        {
+          "keywords": [
+            "台新Pay",
+            "台新Pay+",
+            "TWQR",
+            "台灣Pay",
+            "神腦",
+            "燦坤",
+            "全國電子",
+            "麥當勞",
+            "美廉社",
+            "大樹藥局"
+          ],
+          "rate": 0.038,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "Pay著刷最高3.8%（台新Pay(TWQR、台灣Pay)）",
+          "expiresAt": "2026-12-31"
+        },
+        {
+          "keywords": ["LINE Pay"],
+          "rate": 0.023,
+          "unit": "TWD",
+          "valuePerUnitTwd": 1,
+          "condition": "LINE Pay 綁定最高2.3%（Pay著刷；另有領券加碼依公告）",
+          "expiresAt": "2026-12-31"
+        }
+      ],
+      "benefits": [
+        {
+          "text": "Chill刷：瘋聚會最高10%；沉浸娛樂/獨自升級最高5%；數位外掛最高3.3%（需於 Richart Life App 切換）",
+          "startsAt": "2026-07-08",
+          "expiresAt": "2026-09-30"
+        },
+        {
+          "text": "7+1大方案切換：Pay著刷最高3.8%；天天刷/大筆刷/好饗刷/數趣刷/玩旅刷最高3.3%；假日刷最高2%",
+          "expiresAt": "2026-12-31"
+        }
+      ],
       "airportTransferRules": [
         "活動期間一般消費達 NT$20,000，享機場接/送 1 趟；活動期每正卡最高 2 次。"
       ],
@@ -204,7 +361,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:02.813Z"
+      "lastCrawledAt": "2026-07-27T13:00:00.000Z"
     },
     {
       "id": "esun-unicard-visa",
