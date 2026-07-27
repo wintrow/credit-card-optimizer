@@ -40,15 +40,17 @@ npm run update:offers
 
 - Workflow 檔案：`.github/workflows/update-offers.yml`
 - 觸發方式：
-  - 每天固定排程（UTC 00:15）
+  - 每月 1 日 08:15（台灣時間；UTC 00:15）
   - 手動觸發（`Actions` 頁面中的 `Run workflow`）
 - 若 `data/cards.json` 或 `data/snapshots` 有變更，會自動 commit + push
+- 更新完成後會透過 `workflow_run` 自動觸發 GitHub Pages 重新部署
 
 ### 3) 自動部署網站
 
 - Workflow 檔案：`.github/workflows/deploy-pages.yml`
 - 觸發方式：
   - push 到 `main` 自動部署
+  - `Update Offers Data` 成功後自動部署
   - 可手動觸發
 
 部署完成後，手機可直接開 GitHub Pages 網址瀏覽。
