@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27",
+  "generatedAt": "2026-08-03",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -90,7 +90,11 @@
       ],
       "noRewardExceptionRules": [
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "7-11"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "7-11"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -98,7 +102,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "7-eleven"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "7-eleven"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -106,7 +114,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": ["台新pay", "pay著刷", "全家"],
+          "requiredKeywords": [
+            "台新pay",
+            "pay著刷",
+            "全家"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -114,7 +126,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "7-11"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "7-11"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -122,7 +138,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "7-eleven"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "7-eleven"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -130,7 +150,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "requiredKeywords": ["台新pay", "天天刷", "全家"],
+          "requiredKeywords": [
+            "台新pay",
+            "天天刷",
+            "全家"
+          ],
           "rate": 0.033,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -140,7 +164,11 @@
       ],
       "planHintRules": [
         {
-          "keywords": ["Chill刷", "chill刷", "Chill"],
+          "keywords": [
+            "Chill刷",
+            "chill刷",
+            "Chill"
+          ],
           "rate": 0.1,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -149,7 +177,13 @@
           "expiresAt": "2026-09-30"
         },
         {
-          "keywords": ["假日", "週末", "周末", "國定假日", "連假"],
+          "keywords": [
+            "假日",
+            "週末",
+            "周末",
+            "國定假日",
+            "連假"
+          ],
           "rate": 0.02,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -157,7 +191,11 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "keywords": ["7-11", "7-eleven", "全家"],
+          "keywords": [
+            "7-11",
+            "7-eleven",
+            "全家"
+          ],
           "rate": 0.038,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -218,7 +256,10 @@
           "expiresAt": "2026-09-30"
         },
         {
-          "keywords": ["饗饗", "NAGOMI"],
+          "keywords": [
+            "饗饗",
+            "NAGOMI"
+          ],
           "rate": 0.05,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -304,7 +345,9 @@
           "expiresAt": "2026-09-30"
         },
         {
-          "keywords": ["保費"],
+          "keywords": [
+            "保費"
+          ],
           "rate": 0.013,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -331,7 +374,9 @@
           "expiresAt": "2026-12-31"
         },
         {
-          "keywords": ["LINE Pay"],
+          "keywords": [
+            "LINE Pay"
+          ],
           "rate": 0.023,
           "unit": "TWD",
           "valuePerUnitTwd": 1,
@@ -361,7 +406,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-07-27T13:00:00.000Z"
+      "lastCrawledAt": "2026-08-03T03:56:46.243Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -470,7 +515,9 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:04.652Z"
+      "lastCrawledAt": "2026-08-03T03:56:47.428Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "esun-doctor-infinite-visa",
@@ -584,7 +631,9 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:05.129Z"
+      "lastCrawledAt": "2026-08-03T03:56:47.851Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "ctbc-ana-jcb-precious",
@@ -735,7 +784,9 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:06.457Z"
+      "lastCrawledAt": "2026-08-03T03:56:49.714Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "esun-traveler-visa",
@@ -871,7 +922,9 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:06.748Z"
+      "lastCrawledAt": "2026-08-03T03:56:50.058Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "chase-sapphire-preferred",
@@ -928,7 +981,9 @@
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:07.219Z"
+      "lastCrawledAt": "2026-08-03T03:56:50.531Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "chase-freedom-unlimited",
@@ -982,7 +1037,9 @@
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:07.761Z"
+      "lastCrawledAt": "2026-08-03T03:56:50.735Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     },
     {
       "id": "boa-travel-rewards",
@@ -1026,7 +1083,9 @@
         "rate": 0,
         "note": "No foreign transaction fee。"
       },
-      "lastCrawledAt": "2026-07-01T04:53:07.905Z"
+      "lastCrawledAt": "2026-08-03T03:56:51.081Z",
+      "planHintRules": [],
+      "noRewardExceptionRules": []
     }
   ]
 }
