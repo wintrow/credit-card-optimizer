@@ -129,7 +129,7 @@ function getDisplayCondition(card, rule) {
   if (!rule) return fallback;
 
   if (card?.id === "esun-unicard-visa" && String(rule.condition || "").includes("任意選")) {
-    return "任意選3.5%；UP選4.5%";
+    return "簡單選3%；任意選3.5%；UP選4.5%";
   }
 
   return rule.condition || fallback;
