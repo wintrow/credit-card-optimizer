@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28",
+  "generatedAt": "2026-10-05",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -164,19 +164,6 @@
       "planHintRules": [
         {
           "keywords": [
-            "Chill刷",
-            "chill刷",
-            "Chill"
-          ],
-          "rate": 0.1,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高10%（瘋聚會）；沉浸娛樂/獨自升級最高5%；數位外掛最高3.3%",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
-          "keywords": [
             "假日",
             "週末",
             "周末",
@@ -209,140 +196,6 @@
         "condition": "一般消費 0.3%"
       },
       "merchantRewards": [
-        {
-          "keywords": [
-            "詹記",
-            "萬客什鍋",
-            "海底撈",
-            "屋馬",
-            "茶六",
-            "新村站著吃",
-            "燒肉政宗",
-            "碳佐麻里",
-            "雞湯大叔",
-            "gonna",
-            "BRUN",
-            "CAFE ACME",
-            "Antipodean",
-            "貳樓",
-            "樂子",
-            "Fake Sober",
-            "Draft Land",
-            "臺虎精釀",
-            "啜飲室",
-            "ABV",
-            "Bar TCRC",
-            "Bar Home",
-            "Phowa",
-            "MOONROCK",
-            "50嵐",
-            "得正",
-            "八曜和茶",
-            "五桐號",
-            "龜記",
-            "茶之魔手",
-            "UG TEA",
-            "叮哥",
-            "CAFE!N",
-            "Arabica",
-            "COMPOSE COFFEE"
-          ],
-          "rate": 0.1,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高10%（瘋聚會；限獨立店/官網）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
-          "keywords": [
-            "饗饗",
-            "NAGOMI"
-          ],
-          "rate": 0.05,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高5%（約會賞味）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
-          "keywords": [
-            "WEVERSE",
-            "K-MONSTAR",
-            "微樂客",
-            "五大唱片",
-            "仙女樹",
-            "FANME",
-            "NOL",
-            "巴哈姆特",
-            "BOOK WALKER",
-            "Animate",
-            "樂天KOBO",
-            "Readmoo",
-            "Netflix",
-            "Disney+",
-            "愛爾達"
-          ],
-          "rate": 0.05,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高5%（沉浸娛樂）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
-          "keywords": [
-            "好好生醫",
-            "POPCARE",
-            "營養師輕食",
-            "VITABOX",
-            "MYPROTEIN",
-            "UrMart",
-            "Anytime Fitness",
-            "健身工廠",
-            "World Gym",
-            "Hypercore",
-            "KX PILATES",
-            "虎鐵健身",
-            "17FIT",
-            "Adidas",
-            "New Balance",
-            "PUMA",
-            "Onitsuka Tiger",
-            "Nike",
-            "HOKA",
-            "Salomon",
-            "lululemon"
-          ],
-          "rate": 0.05,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高5%（獨自升級）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
-          "keywords": [
-            "Apple直營店",
-            "Apple官網",
-            "Studio A",
-            "DJI",
-            "Insta360",
-            "GoPro",
-            "蝦皮",
-            "淘寶",
-            "酷澎",
-            "Coupang",
-            "Uber Eats"
-          ],
-          "rate": 0.033,
-          "unit": "TWD",
-          "valuePerUnitTwd": 1,
-          "condition": "Chill刷最高3.3%（數位外掛；蝦皮/Uber Eats等）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
         {
           "keywords": [
             "海外一般消費",
@@ -584,11 +437,6 @@
       ],
       "benefits": [
         {
-          "text": "Chill刷：瘋聚會最高10%；沉浸娛樂/獨自升級最高5%；數位外掛最高3.3%（需於 Richart Life App 切換）",
-          "startsAt": "2026-07-08",
-          "expiresAt": "2026-09-30"
-        },
-        {
           "text": "Pay著刷最高3.8%（台新Pay/TWQR/台灣Pay）；LINE Pay綁定最高2.3%",
           "expiresAt": "2026-12-31"
         },
@@ -616,7 +464,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:54.513Z"
+      "lastCrawledAt": "2026-10-05T05:45:37.615Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -870,7 +718,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:55.827Z",
+      "lastCrawledAt": "2026-10-05T05:45:39.243Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -986,7 +834,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:57.082Z",
+      "lastCrawledAt": "2026-10-05T05:45:40.639Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1139,7 +987,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:57.993Z",
+      "lastCrawledAt": "2026-10-05T05:45:41.942Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1277,7 +1125,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:58.435Z",
+      "lastCrawledAt": "2026-10-05T05:45:42.396Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1336,7 +1184,7 @@
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:58.857Z",
+      "lastCrawledAt": "2026-10-05T05:45:42.872Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1392,7 +1240,7 @@
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:59.035Z",
+      "lastCrawledAt": "2026-10-05T05:45:43.049Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1438,7 +1286,7 @@
         "rate": 0,
         "note": "No foreign transaction fee。"
       },
-      "lastCrawledAt": "2026-09-28T05:27:59.474Z",
+      "lastCrawledAt": "2026-10-05T05:45:43.424Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     }
