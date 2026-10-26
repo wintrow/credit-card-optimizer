@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-26",
   "commonMerchants": [
     "一般消費",
     "LINE Pay",
@@ -464,7 +464,7 @@
         "rate": 0.015,
         "note": "一般海外交易服務費 1.5%；台新Pay+日韓指定交易另有減免活動。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:11.320Z"
+      "lastCrawledAt": "2026-10-26T04:51:28.917Z"
     },
     {
       "id": "esun-unicard-visa",
@@ -718,7 +718,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（銀行慣例；以帳單為準）。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:12.712Z",
+      "lastCrawledAt": "2026-10-26T04:51:30.808Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -834,7 +834,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（回饋另計）。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:14.011Z",
+      "lastCrawledAt": "2026-10-26T04:51:32.289Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -987,7 +987,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%（如有）。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:14.991Z",
+      "lastCrawledAt": "2026-10-26T04:51:33.571Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1125,7 +1125,7 @@
         "rate": 0.015,
         "note": "國外交易服務費 1.5%。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:15.435Z",
+      "lastCrawledAt": "2026-10-26T04:51:34.094Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1184,7 +1184,7 @@
         "rate": 0,
         "note": "No foreign transaction fee（依官方產品頁常規）。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:15.854Z",
+      "lastCrawledAt": "2026-10-26T04:51:34.563Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1240,7 +1240,7 @@
         "rate": 0.03,
         "note": "Foreign transaction fee 3%（公開資料）。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:16.106Z",
+      "lastCrawledAt": "2026-10-26T04:51:34.840Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     },
@@ -1286,7 +1286,7 @@
         "rate": 0,
         "note": "No foreign transaction fee。"
       },
-      "lastCrawledAt": "2026-10-19T04:45:16.599Z",
+      "lastCrawledAt": "2026-10-26T04:51:35.035Z",
       "planHintRules": [],
       "noRewardExceptionRules": []
     }
